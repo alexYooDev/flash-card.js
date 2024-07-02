@@ -1,0 +1,38 @@
+
+.card_front, .card_back {
+  width: 280px;
+  height: 400px;
+  background-color: gray;
+  border-radius: 8px;
+}
+
+.clicked {
+  transition: all 500ms;
+  transform: rotateY(180deg);
+}
+
+.unclicked {
+  transition: all 500ms;
+  transform: rotateY(-180deg);
+}
+
+.card_title, .card_content {
+  font-size: 35px;
+  padding: 10px;
+}
+
+.card_img {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+}
+
+.card_title .card_content .card_img .card_img .clicked {
+  transition: all 500ms;
+  transform: rotateY(-180deg);
+}
+
+.card_title .card_content .card_img .unclicked {
+  transition: all 500ms;
+  transform: rotateY(-180deg);
+}
