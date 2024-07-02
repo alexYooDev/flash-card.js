@@ -1,19 +1,20 @@
-import { useState } from 'react';
 import './searchbar.css'
 
-const SearchBar = () => {
-
-  const [searchText, setSearchText] = useState('');
-
+const SearchBar = ({ searchWord, onChangeSearchWord }) => {
   const handleChange = (event) => {
-    setSearchText(() => event.target.value);
-  }
+    onChangeSearchWord(() => event.target.value);
+  };
 
   return (
     <div>
-      <input type="text" value={searchText} onChange={handleChange} placeholder="Search the vocab here" />
+      <input
+        type='text'
+        value={searchWord}
+        onChange={handleChange}
+        placeholder='Search the vocab here'
+      />
     </div>
-  )
-}
+  );
+};
 
 export default SearchBar;
