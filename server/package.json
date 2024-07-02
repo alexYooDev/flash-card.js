@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/alexYooDev/flash-card.js/issues"
   },
-  "homepage": "https://github.com/alexYooDev/flash-card.js#readme"
+  "homepage": "https://github.com/alexYooDev/flash-card.js#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
